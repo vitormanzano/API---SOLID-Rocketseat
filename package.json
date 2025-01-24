@@ -1,0 +1,47 @@
+{
+  "name": "api---solid-rocketseat",
+  "version": "1.0.0",
+  "description": "Gympass style app.",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
+    "start": "node build/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitormanzano/API---SOLID-Rocketseat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vitormanzano/API---SOLID-Rocketseat/issues"
+  },
+  "homepage": "https://github.com/vitormanzano/API---SOLID-Rocketseat#readme",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "2.2.2",
+    "@types/bcryptjs": "2.4.6",
+    "@types/node": "22.10.10",
+    "@vitest/coverage-v8": "3.0.4",
+    "eslint": "8.57.1",
+    "prisma": "6.2.1",
+    "tsup": "8.3.5",
+    "tsx": "4.19.2",
+    "typescript": "5.7.3",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "3.0.4"
+  },
+  "dependencies": {
+    "@prisma/client": "6.2.1",
+    "bcryptjs": "2.4.3",
+    "dotenv": "16.4.7",
+    "fastify": "5.2.1",
+    "zod": "3.24.1"
+  }
+}
