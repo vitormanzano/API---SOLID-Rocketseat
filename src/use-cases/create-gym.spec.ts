@@ -1,9 +1,5 @@
 import {expect, describe, it, beforeEach, vi} from 'vitest'
-import { InMemoryCheckInsRepository } from '@/repositories/in-memory/in-memory-check-ins-repositories';
-import { CheckInUseCase } from './check-in';
-import { afterEach } from 'vitest';
 import { InMemoryGymsRepository } from '@/repositories/in-memory/in-memory-gyms-repository';
-import { Decimal } from '@prisma/client/runtime/library';
 import { CreateGymUseCase } from './create-gym';
 
 let gymsRepository: InMemoryGymsRepository
